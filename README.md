@@ -18,3 +18,22 @@ for models, rankings in dataset:
              # is the ranking from highest to least important
              # fully connected layer.
 ```
+
+## Bias in the Dataset
+
+We measure the bias in our dataset to assert that the ranking can not be derived immediatly from the architecture. To do so, we count the occurences of each ranking order 
+with the following correspondance: 
+ - 0: [3,2,1,0]
+ - 1: [1,0]
+ - 2: [2,1,0]
+ - 3: [0,1]
+ - 4: [1,2,0]
+ - 5: [2,3,1,0]
+ - 6: [1,2,0,3]
+ - 7: [2,1,3,0,]
+ - 8: [1,0,2]
+ - 9: [1,2,3,0]
+ - 10: [1,3,2,0]
+ - 11: [3,2,0,1]
+
+![image info](./figs/diversity.png)
